@@ -17,6 +17,7 @@ public class EmotionConverter implements Converter<EmotionDto, EmotionEntity> {
                 .build();
     }
 
+    @Override
     public EmotionDto convertReverse(EmotionEntity emotionEntity) {
         return EmotionDto.builder()
                 .id(emotionEntity.getId())

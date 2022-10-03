@@ -33,6 +33,7 @@ public class EmotionLogConverter implements Converter<EmotionLogDto, EmotionLogE
                 .build();
     }
 
+    @Override
     public EmotionLogDto convertReverse(EmotionLogEntity emotionLogEntity) {
         return EmotionLogDto.builder()
                 .id(emotionLogEntity.getId())
